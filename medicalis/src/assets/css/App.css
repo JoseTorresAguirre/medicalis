@@ -1,0 +1,394 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: auto;
+  height: 21%;
+  width: 30%;
+  margin-left: 1.3em;
+}
+
+.profile-card {
+  margin-top: 2em;
+  width: 60%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  padding: auto;
+}
+.profile-card img {
+  width: 250px;
+  height: auto;
+  margin-top: -3em;
+  margin-right: -20px;
+  margin-left: -40px;
+}
+.profile-card .info {
+  flex: 1;
+}
+.profile-card .info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.profile-card .info p {
+  margin: 5px 0;
+}
+.profile-card .info .appointments {
+  background-color: #ff6b6b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.profile-card .info .stars {
+  margin-top: 10px;
+}
+
+.estrellas-resena {
+  color: #f39c12;
+}
+
+.stats-card {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  width: 50%;
+  height: 105%;
+}
+
+.stats-card .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
+
+.logo1 {
+  background-color: #0d6efd80;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.text-logo1 {
+  color: #0d6efd;
+}
+.text-logo2 {
+  color: #dc3545;
+}
+.text-logo3 {
+  color: #198754;
+}
+.logo2 {
+  background-color: #dc35457f;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.logo3 {
+  background-color: #19875480;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.img-logo {
+  max-width: 80%; /* Limita el tamaño de la imagen dentro del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.stats-card .card h3 {
+  margin: 0;
+  font-size: 40px;
+}
+.stats-card .card p {
+  margin: 5px 0;
+  color: #888;
+  margin-top: -10px;
+}
+.stats-card .card .percentage {
+  margin-top: -100px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 10px;
+}
+.stats-card .card .percentage.high {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.stats-card .card .percentage.medium {
+  background-color: #198754;
+  color: #fff;
+}
+.stats-card .card .percentage.low {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.charts .chart {
+  flex: 1;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.charts .chart:last-child {
+  margin-right: 0;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+canvas {
+  width: 100%;
+  height: 300px;
+}
+
+.containerwa {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+}
+.card h3 {
+  margin-top: 0;
+}
+.review {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.review img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.review .content {
+  max-width: 80%;
+}
+.review .content h4 {
+  margin: 0;
+}
+.review .content p {
+  margin: 5px 0;
+}
+.review .content .stars {
+  color: #f39c12;
+}
+.chart {
+  text-align: center;
+}
+.chart img {
+  width: 100px;
+  height: 100px;
+}
+.chart .legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.chart .legend div {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.chart .legend div span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.chart .legend .male span {
+  background-color: #007bff;
+}
+.chart .legend .female span {
+  background-color: #ff4757;
+}
+.chart .legend .kids span {
+  background-color: #ffa502;
+}
+.chart .stats {
+  text-align: left;
+  margin-top: 10px;
+}
+.awards {
+  text-align: center;
+}
+.awards img {
+  width: 100px;
+  height: 150px;
+}
+.awards .arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.awards .arrows i {
+  cursor: pointer;
+}
+.awards .count {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/*äpartado 3*/
+.contenedor-tablero {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+}
+.titulo-tarjeta {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.elemento-resena {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.avatar-resena {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.contenido-resena {
+  max-width: 80%;
+}
+.nombre-resena {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.texto-resena {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #555;
+}
+.estrellas-resena {
+  color: #f39c12;
+}
+.seccion-grafico {
+  text-align: center;
+}
+.imagen-grafico {
+  width: 100px;
+  height: 100px;
+}
+.leyenda-grafico {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.elemento-leyenda {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.color-leyenda {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.hombres .color-leyenda {
+  background-color: #007bff;
+}
+.mujeres .color-leyenda {
+  background-color: #ff4757;
+}
+.ninos .color-leyenda {
+  background-color: #ffa502;
+}
+.estadisticas-grafico {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.seccion-premios {
+  text-align: center;
+}
+.imagen-premio {
+  width: 100px;
+  height: 150px;
+}
+.controles-premios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.flecha-premio {
+  cursor: pointer;
+}
+.contador-premios {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.tarjeta canvas {
+  width: 250px !important; /* Ajusta el ancho */
+  height: 250px !important; /* Ajusta la altura */
+  align-items: center;
+  margin-left: 3cap;
+}
+
+.img-tarjeta {
+  width: 75%;
+  height: 50%;
+  margin-left: 3em;
+}
